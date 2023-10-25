@@ -9,21 +9,17 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.cs" rel="stylesheet">
     <link href="tailwind.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://lordicon.com/assets/css/lordicon.d536f5640fb17d4a3bd9.css">
-<link rel="stylesheet" href="https://lordicon.com/assets/css/page-icons-single.d536f5640fb17d4a3bd9.css">
-
-<link data-resource="pack:editor" rel="preload" as="fetch" href="/assets/pack/editor.iruqzukk.json" crossorigin="anonymous">
-
-
-    <link data-resource="script" rel="preload" as="script" href="https://lordicon.com/assets/js/lordicon.d536f5640fb17d4a3bd9.js">
-    <link data-resource="script" rel="preload" as="script" href="https://lordicon.com/assets/js/libs/lottie.d536f5640fb17d4a3bd9.js">
-    <link data-resource="page:icons-library" rel="preload" as="script" href="https://lordicon.com/assets/js/pages/icons-library.d536f5640fb17d4a3bd9.js">
     <style>
         #lottie-animation {
           width: 200px; /* Adjust the size as needed */
           height: 200px; /* Adjust the size as needed */
           opacity: 0; /* Initially hide the animation */
           transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
+        }
+
+        lord-icon{
+            width:50px;
+            height:50px
         }
       </style>
       
@@ -33,7 +29,7 @@
     <header class="sticky p-4 bg-white border-b">
         <div class="container mx-auto flex justify-between items-center">
             <div>
-                <h1 class="text-2xl font-semibold">Site Title</h1>
+                <h1 class="text-2xl font-semibold">xtOs</h1>
             </div>
             <div>
                 <button class="p-2 border rounded-md">Theme</button>
@@ -44,118 +40,134 @@
     <main>
       
         <div class="container mx-auto py-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Repeating elements with a loop or a template system can further optimize this structure -->
-                <!-- Grid Element 1 -->
-                <div class="border p-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                <!-- Reusable Grid Element Component -->
+                <div class="border rounded p-4">
                     <div class="flex items-center space-x-4">
                         <div>
-                            <lord-icon
-                                src="https://cdn.lordicon.com/ppwsfvnn.json"
-                                trigger="hover"
-                                style="width:100px; height:100px"
-                            ></lord-icon>
+                            <lord-icon src="https://cdn.lordicon.com/ppwsfvnn.json" trigger="hover"></lord-icon>
                         </div>
                         <div>
                             <p class="text-lg">Camera</p>
                         </div>
                     </div>
                 </div>
-        
+                <!-- Repeat the above grid element component as needed -->
                 <!-- Grid Element 2 -->
-                <div class="border p-4">
+                <div class="border rounded p-4">
                     <div class="flex items-center space-x-4">
                         <div>
                             <lord-icon
     src="https://cdn.lordicon.com/bmlkvhui.json"
-    trigger="hover"
-    style="width:100px;height:100px">
+    trigger="hover">
     </lord-icon>
                         </div>
                         <div>
-                            <p class="text-lg">Camera</p>
+                            <p class="text-lg">Camera2</p>
                         </div>
                     </div>
                 </div>
         
                 <!-- Grid Element 3 -->
-                <div class="border p-4">
+                <div class="border rounded rounded p-4">
                     <div class="flex items-center space-x-4">
                         <div>
                             <lord-icon
     src="https://cdn.lordicon.com/sourahfx.json"
-    trigger="hover"
-    style="width:100px;height:100px">
+    trigger="hover">
 </lord-icon>
                         </div>
                         <div>
-                            <p class="text-lg">Camera</p>
+                            <p class="text-lg">Gallery</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Grid Element 3 -->
-                <div class="border p-4">
+                <div class="border rounded p-4">
                     <div class="flex items-center space-x-4">
                         <div>
                             <lord-icon
     src="https://cdn.lordicon.com/dhbjyxqp.json"
-    trigger="hover"
-    style="width:100px;height:100px">
+    trigger="hover">
 </lord-icon>
                         </div>
                         <div>
-                            <p class="text-lg">Camera</p>
+                            <p class="text-lg">Gallery2</p>
                         </div>
                     </div>
                 </div>
 
                  <!-- Grid Element 3 -->
-                 <div class="border p-4">
+                 <div class="border rounded p-4">
                     <div class="flex items-center space-x-4">
                         <div>
                             <lord-icon
     src="https://lordicon.com/icons/wired/lineal/195-phone-book-contacts.json"
-    trigger="hover"
-    style="width:100px;height:100px">
+    trigger="hover">
 </lord-icon>
                         </div>
                         <div>
-                            <p class="text-lg">Camera</p>
+                            <p class="text-lg">Contacts</p>
                         </div>
                     </div>
                 </div>
 
+                 <!-- Grid Element 3 -->
+                 <div class="border rounded p-4">
+                    <div class="flex items-center space-x-4">
+                        <div>
+                            <lord-icon
+    src="https://xtos7.github.io/xtos/telephone.json"
+    trigger="hover">
+</lord-icon>
+                        </div>
+                        <div>
+                            <p class="text-lg">Phone</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Grid Element 3 -->
+                 <div class="border rounded p-4">
+                    <div class="flex items-center space-x-4">
+                        <div>
+                            <lord-icon
+    src="https://xtos7.github.io/xtos/chat.json"
+    trigger="hover">
+</lord-icon>
+                        </div>
+                        <div>
+                            <p class="text-lg">Sms</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Grid Element 3 -->
+                 <div class="border rounded p-4">
+                    <div class="flex items-center space-x-4">
+                        <div>
+                            <lord-icon
+    src="https://xtos7.github.io/xtos/mail.json"
+    trigger="hover">
+</lord-icon>
+                        </div>
+                        <div>
+                            <p class="text-lg">Mail</p>
+                        </div>
+                    </div>
+                </div>
                 <!-- Add more Grid Elements as needed -->
             </div>
         </div>
         
+
+            </div>
+        </div>
         
-        
-        <lord-icon
-    src="https://xtos7.github.io/xtos/telephone.json"
-    trigger="hover"
-    style="width:100px;height:100px">
-</lord-icon>
 
-<lord-icon
-src="https://xtos7.github.io/xtos/telephone2.json"
-trigger="hover"
-style="width:100px;height:100px">
-</lord-icon>
 
-   
-<lord-icon
-src="https://xtos7.github.io/xtos/chat.json"
-trigger="hover"
-style="width:100px;height:100px">
-</lord-icon>
 
-<lord-icon
-src="https://lordicon.com/icons/wired/lineal/195-phone-book-contacts.json"
-trigger="hover"
-style="width:100px;height:100px">
-</lord-icon>
 
     </main>
    
